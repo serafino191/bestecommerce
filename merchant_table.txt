@@ -1,0 +1,23 @@
+-- Create table
+create table TEST2_MERCHANT_DETAILS
+(
+  merchant_id   VARCHAR2(30),
+  merchant_name VARCHAR2(100),
+  merchant_type VARCHAR2(30),
+  owner_name    VARCHAR2(100),
+  address       VARCHAR2(50),
+  email         VARCHAR2(50),
+  pass_word     VARCHAR2(50),
+  phonenumber   VARCHAR2(100)
+)
+tablespace UBSTBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );

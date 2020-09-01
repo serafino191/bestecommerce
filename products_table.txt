@@ -1,0 +1,23 @@
+-- Create table
+create table TEST2_PRODUCT_DETAILS
+(
+  product_id          VARCHAR2(100),
+  product_name        VARCHAR2(100),
+  product_category    VARCHAR2(30),
+  product_description VARCHAR2(100),
+  product_price       VARCHAR2(50),
+  product_inventory   VARCHAR2(50),
+  payment_information VARCHAR2(50),
+  delivery            VARCHAR2(100)
+)
+tablespace UBSTBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
